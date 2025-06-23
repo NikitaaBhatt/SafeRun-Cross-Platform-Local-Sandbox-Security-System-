@@ -1,0 +1,58 @@
+# SafeRun Sandbox Configuration
+
+sandbox:
+  # Default security level for sandbox operation
+  default_security_level: "medium"  # Options: low, medium, high
+  
+  # Default isolation method
+  isolation_method: "container"  # Options: container, process
+  
+  # Auto-detect downloaded files
+  auto_detect_downloads: true
+  
+  # Directories to monitor for new files
+  watched_directories:
+    - "$HOME/Downloads"
+    - "$HOME/Desktop"
+  
+  # Resource limits
+  resource_limits:
+    memory_mb: 512
+    cpu_percent: 50
+    execution_time_seconds: 120
+    network_access: false
+  
+  # Application blacklist (never allow these to run)
+  blacklisted_applications:
+    - "netcat"
+    - "nmap"
+    - "wireshark"
+  
+  # Allowed network connections for different security levels
+  network_rules:
+    low:
+      outbound: true
+      inbound: false
+    medium:
+      outbound: true
+      inbound: false
+      restricted_domains:
+        - "*.malware.com"
+    high:
+      outbound: false
+      inbound: false
+
+# Threat detection settings
+threat_detection:
+  # Thresholds for threat classification
+  suspicious_threshold: 0.3
+  malicious_threshold: 0.7
+  
+  # Suspicious behaviors to monitor
+  suspicious_behaviors:
+    - registry_modification
+    - file_encryption
+    - process_injection
+    - persistence_mechanism
+    - network_scanning
+    - high_resource_usage
