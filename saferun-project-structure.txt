@@ -1,0 +1,43 @@
+SafeRun/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── saferun/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── sandbox_config.yaml
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── sandbox.py
+│   │   ├── isolation.py
+│   │   ├── monitor.py
+│   │   ├── threat_detector.py
+│   ├── platforms/
+│   │   ├── __init__.py
+│   │   ├── windows.py
+│   │   ├── linux.py
+│   │   ├── macos.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── file_analyzer.py
+│   │   ├── logger.py
+│   │   ├── system_utils.py
+│   ├── gui/
+│   │   ├── __init__.py
+│   │   ├── main_window.py
+│   │   ├── file_panel.py
+│   │   ├── monitor_panel.py
+│   │   ├── report_panel.py
+│   │   ├── resources/
+│   │   │   ├── __init__.py
+│   │   │   ├── icons/
+│   │   │   ├── styles/
+├── tests/
+│   ├── __init__.py
+│   ├── test_sandbox.py
+│   ├── test_monitor.py
+│   ├── test_threat_detector.py
+└── .venv/   (Virtual Environment) ✅
