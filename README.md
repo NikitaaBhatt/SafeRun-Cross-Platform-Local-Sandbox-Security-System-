@@ -1,7 +1,6 @@
 # SafeRun: Cross-Platform Local Sandbox Security System
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/NikitaaBhatt/SafeRun-Cross-Platform-Local-Sandbox-Security-System-)
 
 SafeRun is a comprehensive cross-platform sandbox security system that allows you to safely execute potentially malicious files in an isolated environment. It provides real-time threat detection, behavioral analysis, and detailed security reports to help you analyze file safety before execution.
